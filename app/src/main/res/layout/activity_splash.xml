@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash"
+    android:background="#ffffff"
     tools:context="com.example.shimmer_card_try.activities.Splash">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Coz splash"
-        android:textColor="#40668e"
         android:layout_centerInParent="true"
-        android:textSize="50sp"/>
+        android:src="@drawable/shimmer"
+        android:elevation="10dp"/>
 
 </RelativeLayout>
