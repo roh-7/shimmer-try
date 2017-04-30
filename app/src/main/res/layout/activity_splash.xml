@@ -10,8 +10,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="coz splash"
+        android:text="Coz splash"
+        android:textColor="#40668e"
         android:layout_centerInParent="true"
-        android:textSize="30sp"/>
+        android:textSize="50sp"/>
 
 </RelativeLayout>
