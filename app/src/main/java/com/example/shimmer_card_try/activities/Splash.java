@@ -7,17 +7,21 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.example.shimmer_card_try.R;
 
-public class Splash extends AppCompatActivity {
+public class Splash extends AppCompatActivity
+{
 
     private final int SPLASH_TIME_OUT=2000;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        new Handler().postDelayed(new Runnable() {
+        new Handler().postDelayed(new Runnable()
+        {
             @Override
-            public void run() {
+            public void run()
+            {
                 startActivity(new Intent(Splash.this,Main.class));
                 finish();
             }
