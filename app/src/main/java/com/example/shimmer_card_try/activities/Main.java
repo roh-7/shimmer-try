@@ -57,4 +57,9 @@ public class Main extends AppCompatActivity
         bottom_subtitle2 = (ImageView) findViewById(R.id.card_subtitle5);
         bottom_subtitle3 = (ImageView) findViewById(R.id.card_subtitle6);
     }
+
+    private void stopShimmer() {
+        top_shimmerFrameLayout.stopShimmerAnimation();
+        bottom_shimmerFrameLayout.stopShimmerAnimation();
+    }
 }
