@@ -24,15 +24,37 @@ public class Main extends AppCompatActivity
         setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle("Shimmer");
-        final ShimmerFrameLayout top_shimmerFrameLayout = (ShimmerFrameLayout) findViewById(R.id.shimmer1);
+
+        findViews();
+
         top_shimmerFrameLayout.setDuration(1500);
         top_shimmerFrameLayout.setTilt(180);
         top_shimmerFrameLayout.startShimmerAnimation();
 
-        final ShimmerFrameLayout bottom_shimmerFrameLayout = (ShimmerFrameLayout) findViewById(R.id.shimmer2);
         bottom_shimmerFrameLayout.setDuration(1500);
         bottom_shimmerFrameLayout.setTilt(180);
         bottom_shimmerFrameLayout.startShimmerAnimation();
 
+    }
+
+    private void findViews() {
+        top_shimmerFrameLayout = (ShimmerFrameLayout) findViewById(R.id.shimmer1);
+        bottom_shimmerFrameLayout = (ShimmerFrameLayout) findViewById(R.id.shimmer2);
+
+        //top card
+        top_image = (ImageView) findViewById(R.id.card_img1);
+        top_title = (ImageView) findViewById(R.id.card_title1);
+
+        top_subtitle1 = (ImageView) findViewById(R.id.card_subtitle1);
+        top_subtitle2 = (ImageView) findViewById(R.id.card_subtitle2);
+        top_subtitle3 = (ImageView) findViewById(R.id.card_subtitle3);
+
+        //bottom card
+        bottom_image = (ImageView) findViewById(R.id.card_img2);
+        bottom_title = (ImageView) findViewById(R.id.card_title2);
+
+        bottom_subtitle1 = (ImageView) findViewById(R.id.card_subtitle4);
+        bottom_subtitle2 = (ImageView) findViewById(R.id.card_subtitle5);
+        bottom_subtitle3 = (ImageView) findViewById(R.id.card_subtitle6);
     }
 }
